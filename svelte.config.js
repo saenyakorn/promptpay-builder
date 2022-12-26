@@ -16,9 +16,6 @@ const config = {
 			precompress: true,
 			fallback: null
 		}),
-		paths: {
-			base: dev ? '' : '/promptpay-builder'
-		},
 		appDir: 'internal'
 	}
 }
