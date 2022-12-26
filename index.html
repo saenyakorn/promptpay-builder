@@ -5,21 +5,55 @@
 		<link rel="icon" href="./favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta http-equiv="content-security-policy" content="">
-		<link rel="modulepreload" href="./_app/immutable/start-d6a37975.js">
+		<link href="./_app/immutable/assets/_layout-3668177d.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/start-6b00e9b3.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/index-17271f64.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/singletons-b5c07657.js">
+		<link rel="modulepreload" href="./_app/immutable/components/pages/_layout.svelte-fc99a959.js">
+		<link rel="modulepreload" href="./_app/immutable/modules/pages/_layout.ts-9cbb603b.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/_layout-da46b06b.js">
+		<link rel="modulepreload" href="./_app/immutable/components/pages/_page.svelte-e2ca9b42.js"><title>Promptpay Builder</title><!-- HEAD_svelte-w0wkqt_START --><!-- HEAD_svelte-w0wkqt_END -->
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">
-		<script type="module" data-sveltekit-hydrate="45h">
-			import { start } from "./_app/immutable/start-d6a37975.js";
+
+
+
+
+<main class="flex flex-col p-6 sm:p-20 gap-8"><h1 class="text-3xl font-bold text-center">Promptpay Builder</h1>
+	<div class="flex justify-center w-full gap-6 sm:gap-12 flex-wrap"><form class="flex flex-col gap-4" title="Promptpay Builder"><div><div class="flex flex-col w-full gap-1"><label for="identifier" class="after:content-['*'] after:text-red-500 after:ml-1 align-middle">Telephone number</label>
+		<div class="w-full border-2 border-solid border-gray-300 rounded-md flex items-center hover:border-blue-400 focus-within:border-blue-400 transition-colors"><input id="identifier" name="identifier" type="text" class="focus:outline-none p-2 rounded-md w-full" placeholder="0888888888" required value="">
+			</div></div>
+	
+</div>
+			<div><div class="flex flex-col w-full gap-1"><label for="amount" class="after:content-['*'] after:text-red-500 after:ml-1 align-middle">Amount of money</label>
+		<div class="w-full border-2 border-solid border-gray-300 rounded-md flex items-center hover:border-blue-400 focus-within:border-blue-400 transition-colors"><input id="amount" name="amount" type="number" class="focus:outline-none p-2 rounded-md w-full" placeholder="500" required value="">
+			<button type="button" class="text-gray-400 pr-2 bg-none cursor-default">THB</button></div></div>
+	
+</div>
+			<button type="submit" class="text-white bg-indigo-700 hover:bg-indigo-800 focus:ring-4 focus:ring-indigo-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-indigo-600 dark:hover:bg-indigo-700 focus:outline-none dark:focus:ring-indigo-800 font-bold w-full">Generate</button></form>
+		<div class="border-2 border-zinc-200 overflow-hidden rounded-md text-center flex items-center flex-col"><h2 class="bg-primary px-4 pt-4 w-full font-bold text-lg">Thai Promptpay QR Code</h2>
+	<div class="w-[300px] h-[300px] p-4"><div class="bg-zinc-200 h-full w-full"></div></div>
+		<p class="pb-4 px-4 text-zinc-500 text-sm">Please fill the information</p></div></div></main>
+<footer class="w-full p-4 flex flex-col items-center flex-wrap gap-3"><a href="https://github.com/saenyakorn/promptpay-builder"><img alt="GitHub" src="/github-mark.svg" width="20" height="20"></a>
+	<p class="text-xs text-zinc-700">Saenyakorn Siangsanoh © 2022</p></footer>
+
+
+		<script type="module" data-sveltekit-hydrate="hsesn6">
+			import { start } from "./_app/immutable/start-6b00e9b3.js";
 
 			start({
 				env: {},
 				paths: {"base":"","assets":""},
-				target: document.querySelector('[data-sveltekit-hydrate="45h"]').parentNode,
-				version: "1672063335009"
+				target: document.querySelector('[data-sveltekit-hydrate="hsesn6"]').parentNode,
+				version: "1672063896760",
+				hydrate: {
+					node_ids: [0, 2],
+					data: [null,null],
+					form: null
+				}
 			});
-		</script></div>
+		</script>
+	</div>
 	</body>
 </html>
