@@ -1,4 +1,5 @@
 <script>
+	import Foorter from '$lib/Foorter.svelte'
 	import '../app.css'
 </script>
 
@@ -8,3 +9,4 @@
 </svelte:head>
 
 <slot />
+<Foorter />
