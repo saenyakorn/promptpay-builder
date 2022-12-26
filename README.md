@@ -1,38 +1,49 @@
-# create-svelte
+# Promptpay Builder <!-- omit in toc -->
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Thai Promptpay QR code builder given a phone number and amount.
 
-## Creating a project
+# Table of Contents <!-- omit in toc -->
 
-If you're seeing this, you've probably already done this step. Congrats!
+- [Features](#features)
+- [Contributing](#contributing)
+- [Developing](#developing)
+- [Deploying](#deploying)
+- [License](#license)
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+# Features
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+- [x] Generate QR code for Promptpay given a phone number and amount
+- [ ] Support other currencies
+- [ ] Support citizen ID as identifier
 
-## Developing
+# Contributing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Contributions are welcome! Feel free to open an issue or submit a pull request. This project based on [SvelteKit](https://kit.svelte.dev/). You can read the [SvelteKit documentation](https://kit.svelte.dev/docs) to learn about SvelteKit.
 
-```bash
-npm run dev
+# Developing
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
+Once you clone the project, first you need to install the dependencies
 
 ```bash
-npm run build
+pnpm install
 ```
 
-You can preview the production build with `npm run preview`.
+Then, you can run the project in development mode
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+```bash
+pnpm dev
+```
+
+The project will be running at [http://localhost:5173/](http://localhost:5173/).
+
+# Deploying
+
+This project is developed using [Github Page](https://pages.github.com/). It's use `gh-pages` branch to deploy the static site. This project already provides Github Action for deployment.
+
+To deploy the project, one thing you have to do is `dispatching` the [Deployment Workflow](https://github.com/saenyakorn/utm-builder/actions/workflows/deploy.yaml) then the site will be deployed automatically using latest version of `main` branch.
+
+> Don't forget to change CNAME file if you want to deploy to your own domain.
+
+# License
+
+MIT
